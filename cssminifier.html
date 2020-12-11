@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css and JS Minifire</title>
+    <link rel="stylesheet" href="BlondBtun/blondbtun.css">
+</head>
+<body>
+    <style>
+        body {
+            background-color: rgb(0, 0, 0)27, 194, 194);
+        }
+        h1 {
+            text-align: center;
+            color: rgb(33, 65, 211);
+            background: rgb(34, 214, 64);
+            border-radius: 10px;
+        }
+        .container {
+            display: inline;
+        }
+        input , textarea {
+            height: 200px;
+            width: 100%;
+            background-color: rgb(17, 29, 5);
+            outline: 4px solid hotpink;
+            border: 0ch;
+            padding: 4px;
+            color: aqua;
+            resize: none;
+            scroll-behavior: smooth;
+            text-align: start;
+        }
+        input:hover , textarea:hover {
+            outline: 4px solid rgb(48, 18, 219);
+        }
+        .button{
+            text-align: center;
+            padding: 8px;
+            margin: 5px;
+        }
+    </style>
+    <h1>Css and JS Minifier by CodXD - India</h1>
+    <div class="container">
+        <textarea placeholder="Paste Your Css Here" name="maintext" id="maintext" cols="30" rows="10"></textarea>
+        <input type="text" placeholder="Copy the Minified Text From Here" id="minified" name="minified" readonly> <br>
+    </div>
+        <div class="button"><button class="bttn-unite bttn-lg" onclick="minify()">Minify</button></div>
+    <script>
+        function minify() {
+            var maintext = "" ;
+           // document.getElementById('minified').Value = "hii";
+           document.getElementById('minified').value = document.getElementById('maintext').value ;
+        }
+    </script>
+</body>
+</html>
